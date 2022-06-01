@@ -1,5 +1,5 @@
 {
-    "name": "سورس فريدوم بوت",
+    "name": "سورس جيبثون العرب",
     "description": "تشغيل الاغاني في المجموعات",
     "logo": "https://te.legra.ph/file/46fa55b49b85c084159ce.jpg",
     "keywords": [
@@ -16,14 +16,14 @@
     "success_url": "https://t.me/rr8r9",
     "env": {
      "API_ID": {
-            "description": "لاتغيرها ابدا",
+            "description": "ايبي ايدي",
             "required": true,
-            "value": "19399491"
+            "value": ""
         },
      "API_HASH": {
-            "description": "لاتغيرها ابدا",
+            "description": "ايبي هاش",
             "required": true,
-            "value": "eaa4f266934dfef23edb6d1f25e0b10f"
+            "value": ""
         },
         "BOT_TOKEN": {
             "description": "اكتب توكن",
@@ -34,7 +34,7 @@
             "required": true
         },
         "SESSION_NAME": {
-            "description": "اكتب كود ترمكس",
+            "description": "اكتب كود بايروجرام",
             "required": true
         },
         "MONGODB_URL": {
@@ -45,22 +45,22 @@
         "SUDO_USERS": {
             "description": "اكتب ايديات المطورين",
             "required": true,
-            "value": "1854384004"
+            "value": ""
         },
         "OWNER_ID": {
             "description": "اكتب ايدي مالك البوت",
             "required": true,
-            "value": "1854384004"
+            "value": ""
         },
         "OWNER_USERNAME": {
             "description": "اكتب معرف المطور بدون @",
             "required": true,
-            "value": "rr8r9"
+            "value": "lMl10l"
         },
         "ALIVE_NAME": {
             "description": "اكتب اسم المطور",
             "required": true,
-            "value": "muntazer"
+            "value": ""
         }
     },
     "addons": [],
