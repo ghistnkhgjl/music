@@ -85,7 +85,7 @@ async def play_tg_file(c: Client, m: Message, replied: Message = None, link: str
             return await m.reply_text(f"🚫 error:\n\n» {e}")
     if not replied:
         return await m.reply(
-            "-› الرد على ملف صوتي او اكتب .الاوامر لمعرفة استخدام البوت ."
+            "-› الرد على ملف صوتي او اكتب الاوامر لمعرفة استخدام البوت ."
         )
     if replied.audio or replied.voice:
         if not link:
