@@ -22,7 +22,8 @@ UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "jepthon")
 
 # database, decorators, handlers mandatory vars
 MONGODB_URL = getenv("MONGODB_URL")
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/""").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "").split())
 OWNER_ID = list(map(int, getenv("OWNER_ID").split()))
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
