@@ -18,11 +18,11 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/lMl10l/lMl10l")
 UPSTREAM_BRANCH = getenv("UPSTREM_BRANCH", "main")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
 GROUP_SUPPORT = getenv("GROUP_SUPPORT", "jepthonsupport")
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "jepthin")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "jepthon")
 
 # database, decorators, handlers mandatory vars
 MONGODB_URL = getenv("MONGODB_URL")
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/").split())
 OWNER_ID = list(map(int, getenv("OWNER_ID").split()))
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
