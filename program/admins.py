@@ -78,7 +78,7 @@ async def stop(client, m: Message):
             traceback.print_exc()
             await m.reply_text(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply_text("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.")
+        await m.reply_text("لضوج ، ماެفي شي مشتغݪ ياެعيني🌵.")
 
 
 @Client.on_message(
@@ -95,13 +95,13 @@ async def pause(client, m: Message):
             await calls.pause_stream(chat_id)
             await music_off(chat_id)
             await m.reply_text(
-                "⏸ **تم إيقاف المسار مؤقتًا.**\n\n• **لاستمرار الاغنية اكتب**\n»-›  .استمرار"
+                "⏸ **تم إيقاف المسار مؤقتًا.**\n\n• **لاستمرار الاغنية اكتب**\n»-›  استمرار"
             )
         except Exception as e:
             traceback.print_exc()
             await m.reply_text(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply_text("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.")
+        await m.reply_text("لضوج حبيبي ، ماެفي شي مشتغݪ ياެعيني🌵.")
 
 
 @Client.on_message(
@@ -118,13 +118,13 @@ async def resume(client, m: Message):
             await calls.resume_stream(chat_id)
             await music_on(chat_id)
             await m.reply_text(
-                "▶️ **ابشر تم الإستمرار.**\n\n• **لايقاف الأغنية اكتب**\n» .توقف"
+                "▶️ **ابشر تم الإستمرار.**\n\n• **لايقاف الأغنية اكتب**\n» توقف"
             )
         except Exception as e:
             traceback.print_exc()
             await m.reply_text(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply_text("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.")
+        await m.reply_text("لضوج ، ماެفي شي مشتغݪ ياެعيني🌵.")
 
 
 @Client.on_message(command(["تخطي", f"تخ", "التالي"]) & other_filters)
@@ -135,9 +135,9 @@ async def skip(c: Client, m: Message):
     chat_id = m.chat.id
     queue = await skip_current_song(chat_id)
     if queue == 0:
-        await m.reply_text("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.")
+        await m.reply_text("لضوج حبيبي ، ماެفي شي مشتغݪ ياެعيني🌵.")
     elif queue == 1:
-        await m.reply_text(" معݪش ، ماެفي شي مشتغݪ ياެعيني🌵..")
+        await m.reply_text(" لضوج حبيبي ، ماެفي شي مشتغݪ ياެعيني🌵..")
     elif queue == 2:
         await m.reply_text("🗑️ تم مسح**الانتضار**\n\n» **والمساعد** غادر الدردشة الصوتية.")
     else:
@@ -178,7 +178,7 @@ async def mute(client, m: Message):
             traceback.print_exc()
             await m.reply_text(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply_text("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.")
+        await m.reply_text("لضوج حبيبي ، ماެفي شي مشتغݪ ياެعيني🌵.")
 
 
 @Client.on_message(
@@ -201,7 +201,7 @@ async def unmute(client, m: Message):
             traceback.print_exc()
             await m.reply_text(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply_text("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.")
+        await m.reply_text("لضوج حبيبي ، ماެفي شي مشتغݪ ياެعيني🌵.")
 
 
 @Client.on_message(
@@ -229,7 +229,7 @@ async def change_volume(c: Client, m: Message):
             traceback.print_exc()
             await m.reply_text(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply_text("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.")
+        await m.reply_text("لضوج حبيبي ، ماެفي شي مشتغݪ ياެعيني🌵.")
 
 
 @Client.on_callback_query(filters.regex("set_pause"))
@@ -251,7 +251,7 @@ async def cbpause(_, query: CallbackQuery):
             traceback.print_exc()
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=close_mark)
     else:
-        await query.answer("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
+        await query.answer("لضوج ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("set_resume"))
@@ -273,7 +273,7 @@ async def cbresume(_, query: CallbackQuery):
             traceback.print_exc()
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=close_mark)
     else:
-        await query.answer("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
+        await query.answer("لضوج ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("set_stop"))
@@ -293,7 +293,7 @@ async def cbstop(_, query: CallbackQuery):
             traceback.print_exc()
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=close_mark)
     else:
-        await query.answer("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
+        await query.answer("لضوج ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("set_mute"))
@@ -315,7 +315,7 @@ async def cbmute(_, query: CallbackQuery):
             traceback.print_exc()
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=close_mark)
     else:
-        await query.answer("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
+        await query.answer("لضوج ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("set_unmute"))
@@ -337,7 +337,7 @@ async def cbunmute(_, query: CallbackQuery):
             traceback.print_exc()
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=close_mark)
     else:
-        await query.answer("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
+        await query.answer("لضوج ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("set_skip"))
@@ -352,7 +352,7 @@ async def cbskip(_, query: CallbackQuery):
     if queue == 0:
         await query.answer("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
     elif queue == 1:
-        await query.answer("معݪش ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
+        await query.answer("لضوج ، ماެفي شي مشتغݪ ياެعيني🌵.", show_alert=True)
     elif queue == 2:
         await query.answer("🗑️ تم مسح **الانتضار**\n\n» **والمساعد** غادر الدردشة الصوتية.", show_alert=True)
     else:
