@@ -40,7 +40,7 @@
         "MONGODB_URL": {
             "description": "لا تغيرها ابد",
             "required": true,
-            "value": "mongodb+srv://vro:vro@cluster0.eyy25.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+            "value": "mongodb+srv://hussein87:Hussein87@cluster0.wynpz.mongodb.net/?retryWrites=true&w=majority"
         },
         "SUDO_USERS": {
             "description": "اكتب ايديات المطورين",
