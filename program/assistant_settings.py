@@ -62,7 +62,7 @@ async def join_chat(c: Client, m: Message):
 
 
 @Client.on_message(
-    command(["غادر", f"userbotleave@{BOT_USERNAME}"]) & other_filters
+    command(["غادر", f"اطلع"]) & other_filters
 )
 @check_blacklist()
 @authorized_users_only
