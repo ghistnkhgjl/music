@@ -38,7 +38,7 @@
             "required": true
         },
         "MONGODB_URL": {
-            "description": "اكتب قاعدة البيانات",
+            "description": "لا تغيرها ابد",
             "required": true,
             "value": "mongodb+srv://vro:vro@cluster0.eyy25.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
         },
