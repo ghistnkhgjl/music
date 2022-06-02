@@ -80,7 +80,7 @@ async def update_bot(_, message: Message):
     msg = await message.reply("❖ Checking updates...")
     update_avail = updater()
     if update_avail:
-        await msg.edit("✅ Update finished !\n\n• Bot restarting, back active again in 1 minutes.")
+        await msg.edit("✅ تم تحديث البوت بنجاح !\n\n• انتظر يعيد تشغيل البوت ثواني .")
         system("git pull -f && pip3 install --no-cache-dir -r requirements.txt")
         execle(sys.executable, sys.executable, "main.py", environ)
         return
@@ -91,8 +91,8 @@ async def update_bot(_, message: Message):
 @bot_creator
 async def restart_bot(_, message: Message):
     try:
-        msg = await message.reply_text("❖ Restarting bot...")
-        LOGS.info("[INFO]: BOT SERVER RESTARTED !!")
+        msg = await message.reply_text("❖ جار اعادة تشغيل البوت...")
+        LOGS.info("[INFO]: تم اعادة تشغيل البوت !!")
     except BaseException as err:
         LOGS.info(f"[ERROR]: {err}")
         return
