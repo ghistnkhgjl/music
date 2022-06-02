@@ -1,22 +1,3 @@
-"""
-Video + Music Stream Telegram Bot
-Copyright (c) 2022-present levina=lab <https://github.com/levina-lab>
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but without any warranty; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/licenses.html>
-"""
-
-
 import os
 import sys
 
@@ -73,26 +54,26 @@ def updater():
     return bool(changelog)
 
 
-@Client.on_message(command(["تحديث", f"اعادة تشغيل@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["تحديث", f"update@{BOT_USERNAME}"]) & ~filters.edited)
 @bot_creator
 async def update_bot(_, message: Message):
     chat_id = message.chat.id
     msg = await message.reply("❖ Checking updates...")
     update_avail = updater()
     if update_avail:
-        await msg.edit("✅ تم تحديث البوت بنجاح !\n\n• انتظر يعيد تشغيل البوت ثواني .")
+        await msg.edit("✅ Update finished !\n\n• Bot restarting, back active again in 1 minutes.")
         system("git pull -f && pip3 install --no-cache-dir -r requirements.txt")
         execle(sys.executable, sys.executable, "main.py", environ)
         return
     await msg.edit(f"❖ bot is **up-to-date** with [main]({UPSTREAM_REPO}/tree/main) ❖", disable_web_page_preview=True)
 
 
-@Client.on_message(command(["اعادة تشغيل", f"اعادة تشغيل@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["اعادة تشغيل", f"restart@{BOT_USERNAME}"]) & ~filters.edited)
 @bot_creator
 async def restart_bot(_, message: Message):
     try:
-        msg = await message.reply_text("❖ جار اعادة تشغيل البوت...")
-        LOGS.info("[INFO]: تم اعادة تشغيل البوت !!")
+        msg = await message.reply_text("❖ Restarting bot...")
+        LOGS.info("[INFO]: BOT SERVER RESTARTED !!")
     except BaseException as err:
         LOGS.info(f"[ERROR]: {err}")
         return
