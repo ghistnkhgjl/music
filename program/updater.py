@@ -73,7 +73,7 @@ def updater():
     return bool(changelog)
 
 
-@Client.on_message(command(["update", f"update@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["تحديث", f"اعادة تشغيل@{BOT_USERNAME}"]) & ~filters.edited)
 @bot_creator
 async def update_bot(_, message: Message):
     chat_id = message.chat.id
@@ -87,7 +87,7 @@ async def update_bot(_, message: Message):
     await msg.edit(f"❖ bot is **up-to-date** with [main]({UPSTREAM_REPO}/tree/main) ❖", disable_web_page_preview=True)
 
 
-@Client.on_message(command(["restart", f"restart@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["اعادة تشغيل", f"اعادة تشغيل@{BOT_USERNAME}"]) & ~filters.edited)
 @bot_creator
 async def restart_bot(_, message: Message):
     try:
