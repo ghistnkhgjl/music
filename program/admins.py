@@ -172,7 +172,7 @@ async def mute(client, m: Message):
             await calls.mute_stream(chat_id)
             await music_off(chat_id)
             await m.reply_text(
-                "🔇 **تم كتم صوت المساعد.**\n\n• **لإلغاء كتم الصوت اكتب**\n» .بلش"
+                "🔇 **تم كتم صوت المساعد.**\n\n• **لإلغاء كتم الصوت اكتب**\n» سولف"
             )
         except Exception as e:
             traceback.print_exc()
@@ -195,7 +195,7 @@ async def unmute(client, m: Message):
             await calls.unmute_stream(chat_id)
             await music_on(chat_id)
             await m.reply_text(
-                "🔊 **تم الغاء الكتم.**\n\n• **لكتمة مره اخرى اكتب**\n» .كتم"
+                "🔊 **تم الغاء الكتم.**\n\n• **لكتمة مره اخرى اكتب**\n» اش"
             )
         except Exception as e:
             traceback.print_exc()
