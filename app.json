@@ -11,9 +11,9 @@
         "mongodb",
         "pyrogram"
     ],
-    "website": "https://t.me/xl444",
-    "repository": "https://github.com/muntazer995/RR8R9",
-    "success_url": "https://t.me/rr8r9",
+    "website": "https://t.me/jepthon",
+    "repository": "https://github.com/lMl10l/lMl10l",
+    "success_url": "https://t.me/jepthon",
     "env": {
      "API_ID": {
             "description": "ايبي ايدي",
