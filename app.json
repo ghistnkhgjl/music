@@ -1,5 +1,5 @@
 {
-    "name": "سورس جيبثون العرب",
+    "name": " B𝑂𝑇 AL𝑂𝑆𝐻 𝑀𝐔𝑆𝐼𝐶 𓌹♱𓌺 ",
     "description": "تشغيل الاغاني في المجموعات",
     "logo": "https://te.legra.ph/file/46fa55b49b85c084159ce.jpg",
     "keywords": [
@@ -11,9 +11,9 @@
         "mongodb",
         "pyrogram"
     ],
-    "website": "https://t.me/jepthon",
+    "website": "https://t.me/QII_ll",
     "repository": "https://github.com/lMl10l/lMl10l",
-    "success_url": "https://t.me/jepthon",
+    "success_url": "https://t.me/QII_ll",
     "env": {
      "API_ID": {
             "description": "ايبي ايدي",
@@ -55,7 +55,7 @@
         "OWNER_USERNAME": {
             "description": "اكتب معرف المطور بدون @",
             "required": true,
-            "value": "lMl10l"
+            "value": ""
         },
         "ALIVE_NAME": {
             "description": "اكتب اسم المطور",
