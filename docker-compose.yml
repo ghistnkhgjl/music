@@ -4,24 +4,23 @@ services:
     build: .
     environment:
       SESSION_NAME: $SESSION_NAME
-      API_ID: $API_ID
-      API_HASH: $API_HASH
-      MONGODB_URL: $MONGODB_URL
-      LOG_GROUP_ID: $LOG_GROUP_ID
-      OWNER_ID: $OWNER_ID
-      DURATION_LIMIT: $DURATION_LIMIT
-      SUDO_USERS: $SUDO_USERS
-      COMMAND_PREFIXES: $COMMAND_PREFIXES
-      OWNER_USERNAME: $OWNER_USERNAME
-      ALIVE_NAME: $ALIVE_NAME
-      BOT_USERNAME: $BOT_USERNAME
-      UPSTREAM_REPO: $UPSTREAM_REPO
-      UPSTREAM_BRANCH: $UPSTREAM_BRANCH
-      GROUP_SUPPORT: $GROUP_SUPPORT
-      UPDATES_CHANNEL: $UPDATES_CHANNEL
-      IMG_1: $IMG_1
-      IMG_2: $IMG_2
-      IMG_3: $IMG_3
-      IMG_4: $IMG_4
-      IMG_5: $IMG_5
-      ALIVE_IMG: $ALIVE_IMG
+      API_ID: $API_ID # defaults to None
+      API_HASH: $API_HASH # defaults to None
+      MONGODB_URL: $MONGODB_URL # defaults to None
+      LOG_GROUP_ID: $LOG_GROUP_ID # defaults to None
+      OWNER_ID: $OWNER_ID # defaults to None
+      DURATION_LIMIT: $DURATION_LIMIT # defaults to None
+      SUDO_USERS: $SUDO_USERS # defaults to None
+      OWNER_USERNAME: $OWNER_USERNAME # defaults to None
+      ALIVE_NAME: $ALIVE_NAME # defaults to None
+      BOT_USERNAME: $BOT_USERNAME # defaults to None
+      UPSTREAM_REPO: $UPSTREAM_REPO # defaults to None
+      UPSTREAM_BRANCH: $UPSTREAM_BRANCH # defaults to None
+      GROUP_SUPPORT: $GROUP_SUPPORT # defaults to None
+      UPDATES_CHANNEL: $UPDATES_CHANNEL # defaults to None
+      IMG_1: $IMG_1  # defaults to None
+      IMG_2: $IMG_2  # defaults to None
+      IMG_3: $IMG_3  # defaults to None
+      IMG_4: $IMG_4  # defaults to None
+      IMG_5: $IMG_5  # defaults to None
+      ALIVE_IMG: $ALIVE_IMG # defaults to None
