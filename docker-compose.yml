@@ -16,4 +16,5 @@ services:
 
       GROUP_SUPPORT: $GROUP_SUPPORT # defaults to None
       UPDATES_CHANNEL: $UPDATES_CHANNEL # defaults to None
-      ALIVE_IMG: $ALIVE_IMG # defaults to None
+      ALIVE_IMG: $ALIVE_IMG  # defaults to None
+      BOT_TOKEN: $BOT_TOKEN  # defaults to None
